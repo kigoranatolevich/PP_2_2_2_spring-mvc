@@ -21,7 +21,7 @@ public class CarController {
         cars.add(new Car("Model3", "color3", 3000));
         cars.add(new Car("Model4", "color4", 4000));
         cars.add(new Car("Model5", "color5", 5000));
-        model.addAttribute("cars", new CarServiceImpl().getNumbersOfCars(cars, count));
+        model.addAttribute("cars", new CarServiceImpl().getCars(cars, count));
         return "cars";
     }
 }
